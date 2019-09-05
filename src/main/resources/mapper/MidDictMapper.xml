@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MidDictMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.MidDict" >
+    <id column="dinc_id" property="dinc_id" jdbcType="VARCHAR" />
+    <result column="dinc_code" property="dinc_code" jdbcType="VARCHAR" />
+    <result column="dinc_name" property="dinc_name" jdbcType="VARCHAR" />
+    <result column="dinc_sort" property="dinc_sort" jdbcType="VARCHAR" />
+    <result column="dinc_type" property="dinc_type" jdbcType="VARCHAR" />
+    <result column="dinc_status" property="dinc_status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    dinc_id, dinc_code, dinc_name, dinc_sort, dinc_type, dinc_status
+  </sql>
+</mapper>

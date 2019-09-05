@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.IataCorrespondMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.IataCorrespond" >
+    <id column="IATA_ID" property="IATA_ID" jdbcType="VARCHAR" />
+    <result column="AIR_COMPANY" property="AIR_COMPANY" jdbcType="VARCHAR" />
+    <result column="BASE" property="BASE" jdbcType="VARCHAR" />
+    <result column="IATA_CODE" property="IATA_CODE" jdbcType="VARCHAR" />
+    <result column="ICAO_CODE" property="ICAO_CODE" jdbcType="VARCHAR" />
+    <result column="IATA_COUNT" property="IATA_COUNT" jdbcType="VARCHAR" />
+    <result column="CALL_NUM" property="CALL_NUM" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    IATA_ID, AIR_COMPANY, BASE, IATA_CODE, ICAO_CODE, IATA_COUNT, CALL_NUM
+  </sql>
+</mapper>

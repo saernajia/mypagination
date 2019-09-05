@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaApiAccessStatementMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaApiAccessStatement" >
+    <id column="statement_id" property="statement_id" jdbcType="VARCHAR" />
+    <result column="interface_id" property="interface_id" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="statement_date" property="statement_date" jdbcType="VARCHAR" />
+    <result column="statement_hour" property="statement_hour" jdbcType="VARCHAR" />
+    <result column="statement_num" property="statement_num" jdbcType="VARCHAR" />
+    <result column="resp_second" property="resp_second" jdbcType="VARCHAR" />
+    <result column="succ_num" property="succ_num" jdbcType="VARCHAR" />
+    <result column="fail_num" property="fail_num" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    statement_id, interface_id, channel, statement_date, statement_hour, statement_num, 
+    resp_second, succ_num, fail_num, create_time
+  </sql>
+</mapper>

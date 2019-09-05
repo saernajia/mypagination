@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.HcRoleMenuTypeMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.HcRoleMenuType" >
+    <id column="role_id" property="role_id" jdbcType="VARCHAR" />
+    <result column="menu_type_id" property="menu_type_id" jdbcType="VARCHAR" />
+    <result column="relation_id" property="relation_id" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    role_id, menu_type_id, relation_id
+  </sql>
+</mapper>

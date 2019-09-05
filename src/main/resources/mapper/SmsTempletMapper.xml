@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.SmsTempletMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.SmsTemplet" >
+    <id column="sms_id" property="sms_id" jdbcType="VARCHAR" />
+    <result column="templet_code" property="templet_code" jdbcType="VARCHAR" />
+    <result column="templet_name" property="templet_name" jdbcType="VARCHAR" />
+    <result column="max_times" property="max_times" jdbcType="VARCHAR" />
+    <result column="check_type" property="check_type" jdbcType="VARCHAR" />
+    <result column="valid_time" property="valid_time" jdbcType="VARCHAR" />
+    <result column="m_content" property="m_content" jdbcType="VARCHAR" />
+    <result column="e_content" property="e_content" jdbcType="VARCHAR" />
+    <result column="templet_status" property="templet_status" jdbcType="VARCHAR" />
+    <result column="send_mode" property="send_mode" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    sms_id, templet_code, templet_name, max_times, check_type, valid_time, m_content, 
+    e_content, templet_status, send_mode
+  </sql>
+</mapper>

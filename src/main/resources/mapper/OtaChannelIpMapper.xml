@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaChannelIpMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaChannelIp" >
+    <id column="ip_id" property="ip_id" jdbcType="VARCHAR" />
+    <result column="channel_code" property="channel_code" jdbcType="VARCHAR" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ip_id, channel_code, ip, create_time
+  </sql>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MidSmsMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.MidSms" >
+    <id column="sms_id" property="sms_id" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
+    <result column="msg" property="msg" jdbcType="VARCHAR" />
+    <result column="sms_status" property="sms_status" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+    <result column="send_time" property="send_time" jdbcType="VARCHAR" />
+    <result column="templet_code" property="templet_code" jdbcType="VARCHAR" />
+    <result column="templet_name" property="templet_name" jdbcType="VARCHAR" />
+    <result column="check_code" property="check_code" jdbcType="VARCHAR" />
+    <result column="user_code" property="user_code" jdbcType="VARCHAR" />
+    <result column="create_date" property="create_date" jdbcType="VARCHAR" />
+    <result column="sms_type" property="sms_type" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    sms_id, mobile, ip, msg, sms_status, create_time, send_time, templet_code, templet_name, 
+    check_code, user_code, create_date, sms_type
+  </sql>
+</mapper>

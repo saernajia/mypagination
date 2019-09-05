@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MetachangeMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.Metachange" >
+    <id column="chg_Id" property="chg_Id" jdbcType="VARCHAR" />
+    <result column="ticketid" property="ticketid" jdbcType="VARCHAR" />
+    <result column="happendate" property="happendate" jdbcType="VARCHAR" />
+    <result column="happendtime" property="happendtime" jdbcType="VARCHAR" />
+    <result column="ctype" property="ctype" jdbcType="VARCHAR" />
+    <result column="chg_status" property="chg_status" jdbcType="VARCHAR" />
+    <result column="nature" property="nature" jdbcType="VARCHAR" />
+    <result column="change_select" property="change_select" jdbcType="VARCHAR" />
+    <result column="reason" property="reason" jdbcType="VARCHAR" />
+    <result column="actual_refund_money" property="actual_refund_money" jdbcType="VARCHAR" />
+    <result column="refund_charge" property="refund_charge" jdbcType="VARCHAR" />
+    <result column="refund_no" property="refund_no" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="is_transfer" property="is_transfer" jdbcType="VARCHAR" />
+    <result column="is_print" property="is_print" jdbcType="VARCHAR" />
+    <result column="creqdatetime" property="creqdatetime" jdbcType="VARCHAR" />
+    <result column="cresdatetime" property="cresdatetime" jdbcType="VARCHAR" />
+    <result column="refund_mark" property="refund_mark" jdbcType="VARCHAR" />
+    <result column="chg_excpt" property="chg_excpt" jdbcType="VARCHAR" />
+    <result column="out_refund_no" property="out_refund_no" jdbcType="VARCHAR" />
+    <result column="out_refund_error" property="out_refund_error" jdbcType="VARCHAR" />
+    <result column="refund_file" property="refund_file" jdbcType="VARCHAR" />
+    <result column="op_id" property="op_id" jdbcType="VARCHAR" />
+    <result column="op_date" property="op_date" jdbcType="VARCHAR" />
+    <result column="afrom" property="afrom" jdbcType="VARCHAR" />
+    <result column="ato" property="ato" jdbcType="VARCHAR" />
+    <result column="airways" property="airways" jdbcType="VARCHAR" />
+    <result column="fnumber" property="fnumber" jdbcType="VARCHAR" />
+    <result column="fdate" property="fdate" jdbcType="VARCHAR" />
+    <result column="ftime" property="ftime" jdbcType="VARCHAR" />
+    <result column="ttime" property="ttime" jdbcType="VARCHAR" />
+    <result column="fare" property="fare" jdbcType="VARCHAR" />
+    <result column="seat" property="seat" jdbcType="VARCHAR" />
+    <result column="standard_price" property="standard_price" jdbcType="VARCHAR" />
+    <result column="fueltax" property="fueltax" jdbcType="VARCHAR" />
+    <result column="airporttax" property="airporttax" jdbcType="VARCHAR" />
+    <result column="money" property="money" jdbcType="VARCHAR" />
+    <result column="tkt_no" property="tkt_no" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    chg_Id, ticketid, happendate, happendtime, ctype, chg_status, nature, change_select, 
+    reason, actual_refund_money, refund_charge, refund_no, channel, is_transfer, is_print, 
+    creqdatetime, cresdatetime, refund_mark, chg_excpt, out_refund_no, out_refund_error, 
+    refund_file, op_id, op_date, afrom, ato, airways, fnumber, fdate, ftime, ttime, fare, 
+    seat, standard_price, fueltax, airporttax, money, tkt_no
+  </sql>
+</mapper>

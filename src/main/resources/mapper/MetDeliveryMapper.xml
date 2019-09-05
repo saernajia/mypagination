@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MetDeliveryMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.MetDelivery" >
+    <id column="delivery_id" property="delivery_id" jdbcType="VARCHAR" />
+    <result column="order_code" property="order_code" jdbcType="VARCHAR" />
+    <result column="addressee" property="addressee" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="post_code" property="post_code" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="deliver_status" property="deliver_status" jdbcType="VARCHAR" />
+    <result column="apply_type" property="apply_type" jdbcType="VARCHAR" />
+    <result column="apply_date" property="apply_date" jdbcType="VARCHAR" />
+    <result column="mail_type" property="mail_type" jdbcType="VARCHAR" />
+    <result column="mail_date" property="mail_date" jdbcType="VARCHAR" />
+    <result column="mail_no" property="mail_no" jdbcType="VARCHAR" />
+    <result column="conform_date" property="conform_date" jdbcType="VARCHAR" />
+    <result column="dc_date" property="dc_date" jdbcType="VARCHAR" />
+    <result column="recovery_status" property="recovery_status" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    delivery_id, order_code, addressee, phone, post_code, address, deliver_status, apply_type, 
+    apply_date, mail_type, mail_date, mail_no, conform_date, dc_date, recovery_status, 
+    channel
+  </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MetLogMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.MetLog" >
+    <id column="log_id" property="log_id" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+    <result column="operid" property="operid" jdbcType="VARCHAR" />
+    <result column="log_content" property="log_content" jdbcType="VARCHAR" />
+    <result column="log_data" property="log_data" jdbcType="VARCHAR" />
+    <result column="opaccount" property="opaccount" jdbcType="VARCHAR" />
+    <result column="opname" property="opname" jdbcType="VARCHAR" />
+    <result column="sourceid" property="sourceid" jdbcType="VARCHAR" />
+    <result column="log_type" property="log_type" jdbcType="VARCHAR" />
+    <result column="date_id" property="date_id" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    log_id, create_time, operid, log_content, log_data, opaccount, opname, sourceid, 
+    log_type, date_id
+  </sql>
+</mapper>

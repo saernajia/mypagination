@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MetaccountpayMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.Metaccountpay" >
+    <id column="payid" property="payid" jdbcType="VARCHAR" />
+    <result column="orderid" property="orderid" jdbcType="VARCHAR" />
+    <result column="pay_method" property="pay_method" jdbcType="VARCHAR" />
+    <result column="paymoney" property="paymoney" jdbcType="VARCHAR" />
+    <result column="paytype" property="paytype" jdbcType="VARCHAR" />
+    <result column="paystatus" property="paystatus" jdbcType="VARCHAR" />
+    <result column="paybillno" property="paybillno" jdbcType="VARCHAR" />
+    <result column="payserial" property="payserial" jdbcType="VARCHAR" />
+    <result column="prepay_id" property="prepay_id" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="accno" property="accno" jdbcType="VARCHAR" />
+    <result column="bankno" property="bankno" jdbcType="VARCHAR" />
+    <result column="pay_time" property="pay_time" jdbcType="VARCHAR" />
+    <result column="motice_time" property="motice_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    payid, orderid, pay_method, paymoney, paytype, paystatus, paybillno, payserial, prepay_id, 
+    remark, accno, bankno, pay_time, motice_time
+  </sql>
+</mapper>

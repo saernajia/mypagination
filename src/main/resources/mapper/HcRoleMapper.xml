@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.HcRoleMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.HcRole" >
+    <id column="role_id" property="role_id" jdbcType="VARCHAR" />
+    <result column="role_name" property="role_name" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+    <result column="create_opid" property="create_opid" jdbcType="VARCHAR" />
+    <result column="comments" property="comments" jdbcType="VARCHAR" />
+    <result column="role_type" property="role_type" jdbcType="INTEGER" />
+    <result column="source_id" property="source_id" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    role_id, role_name, create_time, create_opid, comments, role_type, source_id
+  </sql>
+</mapper>

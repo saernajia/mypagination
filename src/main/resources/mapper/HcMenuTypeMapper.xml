@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.HcMenuTypeMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.HcMenuType" >
+    <id column="menu_type_id" property="menu_type_id" jdbcType="VARCHAR" />
+    <result column="order_number" property="order_number" jdbcType="INTEGER" />
+    <result column="resource_url" property="resource_url" jdbcType="VARCHAR" />
+    <result column="menu_flag" property="menu_flag" jdbcType="INTEGER" />
+    <result column="menu_name" property="menu_name" jdbcType="VARCHAR" />
+    <result column="parent_id" property="parent_id" jdbcType="VARCHAR" />
+    <result column="menu_level" property="menu_level" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    menu_type_id, order_number, resource_url, menu_flag, menu_name, parent_id, menu_level
+  </sql>
+</mapper>

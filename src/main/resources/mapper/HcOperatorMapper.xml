@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.HcOperatorMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.HcOperator" >
+    <id column="op_id" property="op_id" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="last_login_ip" property="last_login_ip" jdbcType="VARCHAR" />
+    <result column="last_login_time" property="last_login_time" jdbcType="VARCHAR" />
+    <result column="login_count" property="login_count" jdbcType="INTEGER" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="is_online" property="is_online" jdbcType="INTEGER" />
+    <result column="op_account" property="op_account" jdbcType="VARCHAR" />
+    <result column="op_name" property="op_name" jdbcType="VARCHAR" />
+    <result column="op_pwd" property="op_pwd" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="oper_flag" property="oper_flag" jdbcType="INTEGER" />
+    <result column="source_id" property="source_id" jdbcType="VARCHAR" />
+    <result column="oper_type" property="oper_type" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    op_id, email, last_login_ip, last_login_time, login_count, mobile, is_online, op_account, 
+    op_name, op_pwd, phone, remark, oper_flag, source_id, oper_type
+  </sql>
+</mapper>

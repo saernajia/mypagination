@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaPayMethodMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaPayMethod" >
+    <id column="method_id" property="method_id" jdbcType="VARCHAR" />
+    <result column="method_name" property="method_name" jdbcType="VARCHAR" />
+    <result column="business_code" property="business_code" jdbcType="VARCHAR" />
+    <result column="pay_type" property="pay_type" jdbcType="VARCHAR" />
+    <result column="pay_status" property="pay_status" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    method_id, method_name, business_code, pay_type, pay_status, remark, create_time
+  </sql>
+</mapper>

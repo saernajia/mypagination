@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MetorderMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.Metorder" >
+    <id column="orderid" property="orderid" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="mem_id" property="mem_id" jdbcType="VARCHAR" />
+    <result column="userid" property="userid" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="conts_name" property="conts_name" jdbcType="VARCHAR" />
+    <result column="conts_mobile" property="conts_mobile" jdbcType="VARCHAR" />
+    <result column="conts_email" property="conts_email" jdbcType="VARCHAR" />
+    <result column="ordercode" property="ordercode" jdbcType="VARCHAR" />
+    <result column="chanel_ordercode" property="chanel_ordercode" jdbcType="VARCHAR" />
+    <result column="order_status" property="order_status" jdbcType="VARCHAR" />
+    <result column="order_type" property="order_type" jdbcType="VARCHAR" />
+    <result column="paymoney" property="paymoney" jdbcType="VARCHAR" />
+    <result column="fmoney" property="fmoney" jdbcType="VARCHAR" />
+    <result column="refund_money" property="refund_money" jdbcType="VARCHAR" />
+    <result column="adurtprice" property="adurtprice" jdbcType="VARCHAR" />
+    <result column="chdrtprice" property="chdrtprice" jdbcType="VARCHAR" />
+    <result column="payid" property="payid" jdbcType="VARCHAR" />
+    <result column="paystatus" property="paystatus" jdbcType="VARCHAR" />
+    <result column="isinter" property="isinter" jdbcType="VARCHAR" />
+    <result column="airtype" property="airtype" jdbcType="VARCHAR" />
+    <result column="pnr" property="pnr" jdbcType="VARCHAR" />
+    <result column="chd_pnr" property="chd_pnr" jdbcType="VARCHAR" />
+    <result column="afrom_fdate" property="afrom_fdate" jdbcType="VARCHAR" />
+    <result column="ato_fdate" property="ato_fdate" jdbcType="VARCHAR" />
+    <result column="segments" property="segments" jdbcType="VARCHAR" />
+    <result column="guestnum" property="guestnum" jdbcType="VARCHAR" />
+    <result column="passengers" property="passengers" jdbcType="VARCHAR" />
+    <result column="endpaytime" property="endpaytime" jdbcType="VARCHAR" />
+    <result column="push_flag" property="push_flag" jdbcType="VARCHAR" />
+    <result column="send_email_flag" property="send_email_flag" jdbcType="VARCHAR" />
+    <result column="send_sms_flag" property="send_sms_flag" jdbcType="VARCHAR" />
+    <result column="itinerary_status" property="itinerary_status" jdbcType="VARCHAR" />
+    <result column="book_flow" property="book_flow" jdbcType="VARCHAR" />
+    <result column="out_ticket_count" property="out_ticket_count" jdbcType="VARCHAR" />
+    <result column="error_msg_flag" property="error_msg_flag" jdbcType="VARCHAR" />
+    <result column="cancel_reason" property="cancel_reason" jdbcType="VARCHAR" />
+    <result column="creatime" property="creatime" jdbcType="VARCHAR" />
+    <result column="creadate" property="creadate" jdbcType="VARCHAR" />
+    <result column="create_datetime" property="create_datetime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    orderid, channel, mem_id, userid, username, conts_name, conts_mobile, conts_email, 
+    ordercode, chanel_ordercode, order_status, order_type, paymoney, fmoney, refund_money, 
+    adurtprice, chdrtprice, payid, paystatus, isinter, airtype, pnr, chd_pnr, afrom_fdate, 
+    ato_fdate, segments, guestnum, passengers, endpaytime, push_flag, send_email_flag, 
+    send_sms_flag, itinerary_status, book_flow, out_ticket_count, error_msg_flag, cancel_reason, 
+    creatime, creadate, create_datetime
+  </sql>
+</mapper>

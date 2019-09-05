@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.BussParamConfigMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.BussParamConfig" >
+    <id column="param_id" property="param_id" jdbcType="VARCHAR" />
+    <result column="param_code" property="param_code" jdbcType="VARCHAR" />
+    <result column="param_name" property="param_name" jdbcType="VARCHAR" />
+    <result column="param_value" property="param_value" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="param_status" property="param_status" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    param_id, param_code, param_name, param_value, remark, channel, param_status
+  </sql>
+</mapper>

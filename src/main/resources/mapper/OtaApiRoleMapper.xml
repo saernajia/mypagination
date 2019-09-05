@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaApiRoleMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaApiRole" >
+    <id column="role_id" property="role_id" jdbcType="VARCHAR" />
+    <result column="role_name" property="role_name" jdbcType="VARCHAR" />
+    <result column="role_status" property="role_status" jdbcType="VARCHAR" />
+    <result column="channel_id" property="channel_id" jdbcType="VARCHAR" />
+    <result column="interface_id" property="interface_id" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    role_id, role_name, role_status, channel_id, interface_id, create_time
+  </sql>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.RealTimeStopMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.RealTimeStop" >
+    <id column="stop_id" property="stop_id" jdbcType="VARCHAR" />
+    <result column="flight_date" property="flight_date" jdbcType="VARCHAR" />
+    <result column="flight_no" property="flight_no" jdbcType="VARCHAR" />
+    <result column="dep_airport" property="dep_airport" jdbcType="VARCHAR" />
+    <result column="arr_airport" property="arr_airport" jdbcType="VARCHAR" />
+    <result column="stop_dep_time" property="stop_dep_time" jdbcType="VARCHAR" />
+    <result column="stop_arr_time" property="stop_arr_time" jdbcType="VARCHAR" />
+    <result column="stop_time" property="stop_time" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    stop_id, flight_date, flight_no, dep_airport, arr_airport, stop_dep_time, stop_arr_time, 
+    stop_time, create_time
+  </sql>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.RealPriceCalendarMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.RealPriceCalendar" >
+    <id column="price_id" property="price_id" jdbcType="VARCHAR" />
+    <result column="airline" property="airline" jdbcType="VARCHAR" />
+    <result column="dep_airport" property="dep_airport" jdbcType="VARCHAR" />
+    <result column="arr_airport" property="arr_airport" jdbcType="VARCHAR" />
+    <result column="flight_date" property="flight_date" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+    <result column="modify_time" property="modify_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    price_id, airline, dep_airport, arr_airport, flight_date, price, create_time, modify_time
+  </sql>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaChannelAccountMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaChannelAccount" >
+    <id column="channel_id" property="channel_id" jdbcType="VARCHAR" />
+    <result column="channel_code" property="channel_code" jdbcType="VARCHAR" />
+    <result column="channel_name" property="channel_name" jdbcType="VARCHAR" />
+    <result column="channel_user" property="channel_user" jdbcType="VARCHAR" />
+    <result column="channel_api_pwd" property="channel_api_pwd" jdbcType="VARCHAR" />
+    <result column="channel_login_pwd" property="channel_login_pwd" jdbcType="VARCHAR" />
+    <result column="contact_name" property="contact_name" jdbcType="VARCHAR" />
+    <result column="contact_mobile" property="contact_mobile" jdbcType="VARCHAR" />
+    <result column="create_channel_id" property="create_channel_id" jdbcType="VARCHAR" />
+    <result column="channel_status" property="channel_status" jdbcType="VARCHAR" />
+    <result column="role_id" property="role_id" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+    <result column="modify_time" property="modify_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    channel_id, channel_code, channel_name, channel_user, channel_api_pwd, channel_login_pwd, 
+    contact_name, contact_mobile, create_channel_id, channel_status, role_id, create_time, 
+    modify_time
+  </sql>
+</mapper>

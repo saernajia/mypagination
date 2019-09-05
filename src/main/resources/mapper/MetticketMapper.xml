@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MetticketMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.Metticket" >
+    <id column="ticketid" property="ticketid" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="userid" property="userid" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="passertype" property="passertype" jdbcType="VARCHAR" />
+    <result column="pname" property="pname" jdbcType="VARCHAR" />
+    <result column="idtype" property="idtype" jdbcType="VARCHAR" />
+    <result column="idnumber" property="idnumber" jdbcType="VARCHAR" />
+    <result column="gender" property="gender" jdbcType="VARCHAR" />
+    <result column="pid" property="pid" jdbcType="VARCHAR" />
+    <result column="gmobile" property="gmobile" jdbcType="VARCHAR" />
+    <result column="pnr" property="pnr" jdbcType="VARCHAR" />
+    <result column="seat" property="seat" jdbcType="VARCHAR" />
+    <result column="ticket_type" property="ticket_type" jdbcType="VARCHAR" />
+    <result column="tic_status" property="tic_status" jdbcType="VARCHAR" />
+    <result column="tkt_status" property="tkt_status" jdbcType="VARCHAR" />
+    <result column="eticketno" property="eticketno" jdbcType="VARCHAR" />
+    <result column="segid" property="segid" jdbcType="VARCHAR" />
+    <result column="sail" property="sail" jdbcType="VARCHAR" />
+    <result column="from_airport" property="from_airport" jdbcType="VARCHAR" />
+    <result column="to_airport" property="to_airport" jdbcType="VARCHAR" />
+    <result column="from_term" property="from_term" jdbcType="VARCHAR" />
+    <result column="to_term" property="to_term" jdbcType="VARCHAR" />
+    <result column="afrom" property="afrom" jdbcType="VARCHAR" />
+    <result column="ato" property="ato" jdbcType="VARCHAR" />
+    <result column="airname" property="airname" jdbcType="VARCHAR" />
+    <result column="airways" property="airways" jdbcType="VARCHAR" />
+    <result column="fnumber" property="fnumber" jdbcType="VARCHAR" />
+    <result column="fdate" property="fdate" jdbcType="VARCHAR" />
+    <result column="ftime" property="ftime" jdbcType="VARCHAR" />
+    <result column="ttime" property="ttime" jdbcType="VARCHAR" />
+    <result column="standard_price" property="standard_price" jdbcType="VARCHAR" />
+    <result column="paymoney" property="paymoney" jdbcType="VARCHAR" />
+    <result column="fare" property="fare" jdbcType="VARCHAR" />
+    <result column="fmoney" property="fmoney" jdbcType="VARCHAR" />
+    <result column="money" property="money" jdbcType="VARCHAR" />
+    <result column="discount" property="discount" jdbcType="VARCHAR" />
+    <result column="airport_tax" property="airport_tax" jdbcType="VARCHAR" />
+    <result column="fuel_tax" property="fuel_tax" jdbcType="VARCHAR" />
+    <result column="other_tax" property="other_tax" jdbcType="VARCHAR" />
+    <result column="iata_tax" property="iata_tax" jdbcType="VARCHAR" />
+    <result column="pricing" property="pricing" jdbcType="VARCHAR" />
+    <result column="ticket_price" property="ticket_price" jdbcType="VARCHAR" />
+    <result column="tax_price" property="tax_price" jdbcType="VARCHAR" />
+    <result column="adtindex" property="adtindex" jdbcType="VARCHAR" />
+    <result column="fbc" property="fbc" jdbcType="VARCHAR" />
+    <result column="share_code" property="share_code" jdbcType="VARCHAR" />
+    <result column="opcar_airline" property="opcar_airline" jdbcType="VARCHAR" />
+    <result column="opcar_fltno" property="opcar_fltno" jdbcType="VARCHAR" />
+    <result column="stop_num" property="stop_num" jdbcType="VARCHAR" />
+    <result column="meal" property="meal" jdbcType="VARCHAR" />
+    <result column="eticket" property="eticket" jdbcType="VARCHAR" />
+    <result column="outdatetime" property="outdatetime" jdbcType="VARCHAR" />
+    <result column="chgroledesc" property="chgroledesc" jdbcType="VARCHAR" />
+    <result column="changedesc" property="changedesc" jdbcType="VARCHAR" />
+    <result column="cstatus" property="cstatus" jdbcType="VARCHAR" />
+    <result column="changeid" property="changeid" jdbcType="VARCHAR" />
+    <result column="tictype" property="tictype" jdbcType="VARCHAR" />
+    <result column="sourceid" property="sourceid" jdbcType="VARCHAR" />
+    <result column="productid" property="productid" jdbcType="VARCHAR" />
+    <result column="productname" property="productname" jdbcType="VARCHAR" />
+    <result column="passport_valid" property="passport_valid" jdbcType="VARCHAR" />
+    <result column="passport_country" property="passport_country" jdbcType="VARCHAR" />
+    <result column="country" property="country" jdbcType="VARCHAR" />
+    <result column="birthday" property="birthday" jdbcType="VARCHAR" />
+    <result column="flight_time" property="flight_time" jdbcType="VARCHAR" />
+    <result column="spectype" property="spectype" jdbcType="VARCHAR" />
+    <result column="specno" property="specno" jdbcType="VARCHAR" />
+    <result column="jccardno" property="jccardno" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ticketid, channel, userid, username, mobile, passertype, pname, idtype, idnumber, 
+    gender, pid, gmobile, pnr, seat, ticket_type, tic_status, tkt_status, eticketno, 
+    segid, sail, from_airport, to_airport, from_term, to_term, afrom, ato, airname, airways, 
+    fnumber, fdate, ftime, ttime, standard_price, paymoney, fare, fmoney, money, discount, 
+    airport_tax, fuel_tax, other_tax, iata_tax, pricing, ticket_price, tax_price, adtindex, 
+    fbc, share_code, opcar_airline, opcar_fltno, stop_num, meal, eticket, outdatetime, 
+    chgroledesc, changedesc, cstatus, changeid, tictype, sourceid, productid, productname, 
+    passport_valid, passport_country, country, birthday, flight_time, spectype, specno, 
+    jccardno
+  </sql>
+
+</mapper>

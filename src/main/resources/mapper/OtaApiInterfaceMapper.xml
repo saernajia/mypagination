@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaApiInterfaceMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaApiInterface" >
+    <id column="interface_id" property="interface_id" jdbcType="INTEGER" />
+    <result column="api_url" property="api_url" jdbcType="VARCHAR" />
+    <result column="api_name" property="api_name" jdbcType="VARCHAR" />
+    <result column="api_version" property="api_version" jdbcType="VARCHAR" />
+    <result column="api_content" property="api_content" jdbcType="VARCHAR" />
+    <result column="interface_status" property="interface_status" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    interface_id, api_url, api_name, api_version, api_content, interface_status, create_time
+  </sql>
+</mapper>

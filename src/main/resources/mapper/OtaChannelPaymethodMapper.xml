@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaChannelPaymethodMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaChannelPaymethod" >
+    <id column="config_id" property="config_id" jdbcType="VARCHAR" />
+    <result column="channel_id" property="channel_id" jdbcType="VARCHAR" />
+    <result column="method_id" property="method_id" jdbcType="VARCHAR" />
+    <result column="settle_type" property="settle_type" jdbcType="VARCHAR" />
+    <result column="config_status" property="config_status" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    config_id, channel_id, method_id, settle_type, config_status, create_time
+  </sql>
+</mapper>

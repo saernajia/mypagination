@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.RealTimeFareRuleMapper">
+    <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.RealTimeFareRule">
+        <id column="rule_id" property="rule_id" jdbcType="VARCHAR"/>
+        <result column="rule_code" property="rule_code" jdbcType="VARCHAR"/>
+        <result column="point_rate" property="point_rate" jdbcType="VARCHAR"/>
+        <result column="dep_airport" property="dep_airport" jdbcType="VARCHAR"/>
+        <result column="arr_airport" property="arr_airport" jdbcType="VARCHAR"/>
+        <result column="flight_no" property="flight_no" jdbcType="VARCHAR"/>
+        <result column="cabin" property="cabin" jdbcType="VARCHAR"/>
+        <result column="rule_type" property="rule_type" jdbcType="VARCHAR"/>
+        <result column="rule_status" property="rule_status" jdbcType="VARCHAR"/>
+        <result column="flight_date_start" property="flight_date_start" jdbcType="VARCHAR"/>
+        <result column="flight_date_end" property="flight_date_end" jdbcType="VARCHAR"/>
+        <result column="sale_date_start" property="sale_date_start" jdbcType="VARCHAR"/>
+        <result column="sale_date_end" property="sale_date_end" jdbcType="VARCHAR"/>
+        <result column="class_tag" property="class_tag" jdbcType="VARCHAR"/>
+        <result column="tax_sale_type" property="tax_sale_type" jdbcType="VARCHAR"/>
+        <result column="promotion" property="promotion" jdbcType="VARCHAR"/>
+        <result column="amount" property="amount" jdbcType="VARCHAR"/>
+        <result column="create_time" property="create_time" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        rule_id, rule_code, point_rate, dep_airport, arr_airport, flight_no, cabin, rule_type,
+        rule_status, flight_date_start, flight_date_end, sale_date_start, sale_date_end,
+        class_tag, tax_sale_type, promotion, amount, create_time
+     </sql>
+    <select id="queryByCondition" parameterType="com.redapplenet.cloud.util.entity.RealTimeFareRule"
+            resultType="com.redapplenet.cloud.util.entity.RealTimeFareRule">
+        select * from real_time_fare_rule
+        WHERE DEPARTURE_AIRPORT = #{DEPARTURE_AIRPORT} and ARRIVE_AIRPORT = #{ARRIVE_AIRPORT}
+        and FLIGHT_NO = #{FLIGHT_NO} and FLIGHT_DATE_START &lt;= #{FLIGHT_DATE_START} and FLIGHT_DATE_END &gt;= #{FLIGHT_DATE_END}
+        and status = 1 and (CLASS = 0 OR CLASS like CONCAT(#{CLASS},'%'))
+    </select>
+</mapper>

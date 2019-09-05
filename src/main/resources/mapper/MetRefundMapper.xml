@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.MetRefundMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.MetRefund" >
+    <id column="refund_id" property="refund_id" jdbcType="VARCHAR" />
+    <result column="ticketid" property="ticketid" jdbcType="VARCHAR" />
+    <result column="payid" property="payid" jdbcType="VARCHAR" />
+    <result column="refund_status" property="refund_status" jdbcType="VARCHAR" />
+    <result column="apply_date" property="apply_date" jdbcType="VARCHAR" />
+    <result column="apply_op" property="apply_op" jdbcType="VARCHAR" />
+    <result column="audit_date" property="audit_date" jdbcType="VARCHAR" />
+    <result column="audit_op" property="audit_op" jdbcType="VARCHAR" />
+    <result column="create_date" property="create_date" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="apply_no" property="apply_no" jdbcType="VARCHAR" />
+    <result column="refund_date" property="refund_date" jdbcType="VARCHAR" />
+    <result column="order_code" property="order_code" jdbcType="VARCHAR" />
+    <result column="pnr" property="pnr" jdbcType="VARCHAR" />
+    <result column="bank_code" property="bank_code" jdbcType="VARCHAR" />
+    <result column="pay_type" property="pay_type" jdbcType="VARCHAR" />
+    <result column="pay_amouts" property="pay_amouts" jdbcType="VARCHAR" />
+    <result column="refund_amouts" property="refund_amouts" jdbcType="VARCHAR" />
+    <result column="passenger" property="passenger" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="apply_remark" property="apply_remark" jdbcType="VARCHAR" />
+    <result column="audit_remark" property="audit_remark" jdbcType="VARCHAR" />
+    <result column="refund_amouts_actual" property="refund_amouts_actual" jdbcType="VARCHAR" />
+    <result column="refund_amouts_date" property="refund_amouts_date" jdbcType="VARCHAR" />
+    <result column="eticketno" property="eticketno" jdbcType="VARCHAR" />
+    <result column="refund_type" property="refund_type" jdbcType="VARCHAR" />
+    <result column="refund_amouts_op" property="refund_amouts_op" jdbcType="VARCHAR" />
+    <result column="refund_amouts_remark" property="refund_amouts_remark" jdbcType="VARCHAR" />
+    <result column="orderid" property="orderid" jdbcType="VARCHAR" />
+    <result column="wx_refund_error_msg" property="wx_refund_error_msg" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    refund_id, ticketid, payid, refund_status, apply_date, apply_op, audit_date, audit_op, 
+    create_date, channel, apply_no, refund_date, order_code, pnr, bank_code, pay_type, 
+    pay_amouts, refund_amouts, passenger, phone, apply_remark, audit_remark, refund_amouts_actual, 
+    refund_amouts_date, eticketno, refund_type, refund_amouts_op, refund_amouts_remark, 
+    orderid, wx_refund_error_msg
+  </sql>
+</mapper>

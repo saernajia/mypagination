@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.RealTimeFlightMapper">
+    <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.RealTimeFlight">
+        <id column="flight_id" property="flight_id" jdbcType="VARCHAR"/>
+        <result column="source_id" property="source_id" jdbcType="VARCHAR"/>
+        <result column="customer_id" property="customer_id" jdbcType="VARCHAR"/>
+        <result column="airline" property="airline" jdbcType="VARCHAR"/>
+        <result column="flight_no" property="flight_no" jdbcType="VARCHAR"/>
+        <result column="dep_airport" property="dep_airport" jdbcType="VARCHAR"/>
+        <result column="arr_airport" property="arr_airport" jdbcType="VARCHAR"/>
+        <result column="dep_date" property="dep_date" jdbcType="VARCHAR"/>
+        <result column="arr_date" property="arr_date" jdbcType="VARCHAR"/>
+        <result column="dep_time" property="dep_time" jdbcType="VARCHAR"/>
+        <result column="arr_time" property="arr_time" jdbcType="VARCHAR"/>
+        <result column="dep_terminal" property="dep_terminal" jdbcType="VARCHAR"/>
+        <result column="arr_terminal" property="arr_terminal" jdbcType="VARCHAR"/>
+        <result column="duration" property="duration" jdbcType="VARCHAR"/>
+        <result column="week" property="week" jdbcType="VARCHAR"/>
+        <result column="stop_id" property="stop_id" jdbcType="VARCHAR"/>
+        <result column="stop_num" property="stop_num" jdbcType="VARCHAR"/>
+        <result column="plane_type" property="plane_type" jdbcType="VARCHAR"/>
+        <result column="meal" property="meal" jdbcType="VARCHAR"/>
+        <result column="et" property="et" jdbcType="VARCHAR"/>
+        <result column="code_share" property="code_share" jdbcType="VARCHAR"/>
+        <result column="share_airline" property="share_airline" jdbcType="VARCHAR"/>
+        <result column="share_flight_no" property="share_flight_no" jdbcType="VARCHAR"/>
+        <result column="mile" property="mile" jdbcType="VARCHAR"/>
+        <result column="wifi" property="wifi" jdbcType="VARCHAR"/>
+        <result column="cabin_crew" property="cabin_crew" jdbcType="VARCHAR"/>
+        <result column="currency" property="currency" jdbcType="VARCHAR"/>
+        <result column="create_time" property="create_time" jdbcType="VARCHAR"/>
+        <result column="abroad" property="abroad" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        flight_id, source_id, customer_id, airline, flight_no, dep_airport, arr_airport,
+        dep_date, arr_date, dep_time, arr_time, dep_terminal, arr_terminal, duration, week,
+        stop_id, stop_num, plane_type, meal, et, code_share, share_airline, share_flight_no,
+        mile, wifi, cabin_crew, currency, create_time, abroad
+    </sql>
+    <insert id="insertBatch" parameterType="java.util.List">
+        replace into real_time_flight (FLIGHT_ID, SOURCE_ID, CUSTOMER_ID,
+        AIRLINE, FLIGHT_NO, DEPARTURE_AIRPORT,
+        ARRIVE_AIRPORT, DEPARTURE_DATE, ARRIVE_DATE,
+        DEPART_TIME, ARRIVE_TIME, DURATION,
+        WEEK, STOP_AIRPORT, NON_STOP,
+        PLANE_TYPE, MEAL, ET,
+        CODE_SHARE, SHARE_AIRLINE, SHARE_FLIGHT_NO,
+        MILE, WIFI, CABIN_CREW,
+        CURRENCY, FARE_TIME, ABROAD,
+        ARRIVE_TERMINAL,DEPART_TERMINAL,
+        FLIGHT_TAG1, FLIGHT_TAG2, FLIGHT_TAG3
+        )
+        values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.FLIGHT_ID}, #{item.SOURCE_ID}, #{item.CUSTOMER_ID},
+            #{item.AIRLINE}, #{item.FLIGHT_NO}, #{item.DEPARTURE_AIRPORT},
+            #{item.ARRIVE_AIRPORT}, #{item.DEPARTURE_DATE}, #{item.ARRIVE_DATE},
+            #{item.DEPART_TIME}, #{item.ARRIVE_TIME}, #{item.DURATION},
+            #{item.WEEK}, #{item.STOP_AIRPORT}, #{item.NON_STOP},
+            #{item.PLANE_TYPE}, #{item.MEAL}, #{item.ET},
+            #{item.CODE_SHARE}, #{item.SHARE_AIRLINE}, #{item.SHARE_FLIGHT_NO},
+            #{item.MILE}, #{item.WIFI}, #{item.CABIN_CREW},
+            #{item.CURRENCY}, #{item.FARE_TIME}, #{item.ABROAD},
+            #{item.ARRIVE_TERMINAL},#{item.DEPART_TERMINAL},
+            #{item.FLIGHT_TAG1}, #{item.FLIGHT_TAG2}, #{item.FLIGHT_TAG3}
+            )
+        </foreach>
+    </insert>
+</mapper>

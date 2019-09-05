@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.RealTimeCabinMapper">
+    <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.RealTimeCabin">
+        <id column="cabin_id" property="cabin_id" jdbcType="VARCHAR"/>
+        <result column="flight_id" property="flight_id" jdbcType="VARCHAR"/>
+        <result column="cabin" property="cabin" jdbcType="VARCHAR"/>
+        <result column="base_price" property="base_price" jdbcType="VARCHAR"/>
+        <result column="ybase_price" property="ybase_price" jdbcType="VARCHAR"/>
+        <result column="basis_class" property="basis_class" jdbcType="VARCHAR"/>
+        <result column="discount" property="discount" jdbcType="VARCHAR"/>
+        <result column="av_num" property="av_num" jdbcType="VARCHAR"/>
+        <result column="fbc" property="fbc" jdbcType="VARCHAR"/>
+        <result column="passenger_type" property="passenger_type" jdbcType="VARCHAR"/>
+        <result column="airport_tax" property="airport_tax" jdbcType="VARCHAR"/>
+        <result column="fuel_tax" property="fuel_tax" jdbcType="VARCHAR"/>
+        <result column="other_tax" property="other_tax" jdbcType="VARCHAR"/>
+        <result column="other_tax_detail" property="other_tax_detail" jdbcType="VARCHAR"/>
+        <result column="office" property="office" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        cabin_id, flight_id, cabin, base_price, ybase_price, basis_class, discount, av_num,
+        fbc, passenger_type, airport_tax, fuel_tax, other_tax, other_tax_detail, office
+    </sql>
+    <insert id="insertBatch" parameterType="java.util.List">
+        replace into real_time_cabin (CABIN_ID, FLIGHT_ID, CLASS, NAME,
+        PRICE, BASE_PRICE, BASE_CLASS,
+        DISCOUNT, AV_NUM, TYPE,
+        FBC, AIRPORT_TAX, FUEL_TAX,
+        OTHER_TAX, OTHER_TXA_DETAIL, OFFICE,
+        PASSENGE_TYPE)
+        values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.CABIN_ID}, #{item.FLIGHT_ID}, #{item.CLASS}, #{item.NAME},
+            #{item.PRICE}, #{item.BASE_PRICE}, #{item.BASE_CLASS},
+            #{item.DISCOUNT}, #{item.AV_NUM}, #{item.TYPE},
+            #{item.FBC}, #{item.AIRPORT_TAX}, #{item.FUEL_TAX},
+            #{item.OTHER_TAX}, #{item.OTHER_TXA_DETAIL,}, #{item.OFFICE},
+            #{item.PASSENGE_TYPE})
+        </foreach>
+    </insert>
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redapplenet.cloud.util.dao.OtaChannelBussConfigMapper" >
+  <resultMap id="BaseResultMap" type="com.redapplenet.cloud.util.entity.OtaChannelBussConfig" >
+    <id column="buss_id" property="buss_id" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="pay_time_limit" property="pay_time_limit" jdbcType="VARCHAR" />
+    <result column="chd_sale_flag" property="chd_sale_flag" jdbcType="VARCHAR" />
+    <result column="inf_sale_flag" property="inf_sale_flag" jdbcType="VARCHAR" />
+    <result column="officia_sale_flag" property="officia_sale_flag" jdbcType="VARCHAR" />
+    <result column="police_disable_sale_flag" property="police_disable_sale_flag" jdbcType="VARCHAR" />
+    <result column="ct" property="ct" jdbcType="VARCHAR" />
+    <result column="share_code" property="share_code" jdbcType="VARCHAR" />
+    <result column="share_code_airline" property="share_code_airline" jdbcType="VARCHAR" />
+    <result column="access_rate_min" property="access_rate_min" jdbcType="VARCHAR" />
+    <result column="query_base_num" property="query_base_num" jdbcType="VARCHAR" />
+    <result column="query_book_rate" property="query_book_rate" jdbcType="VARCHAR" />
+    <result column="city_pair_roleid" property="city_pair_roleid" jdbcType="VARCHAR" />
+    <result column="cabin_roleid" property="cabin_roleid" jdbcType="VARCHAR" />
+    <result column="send_sms_flag" property="send_sms_flag" jdbcType="VARCHAR" />
+    <result column="seng_email_flag" property="seng_email_flag" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="VARCHAR" />
+    <result column="modify_time" property="modify_time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    buss_id, channel, pay_time_limit, chd_sale_flag, inf_sale_flag, officia_sale_flag, 
+    police_disable_sale_flag, ct, share_code, share_code_airline, access_rate_min, query_base_num, 
+    query_book_rate, city_pair_roleid, cabin_roleid, send_sms_flag, seng_email_flag, 
+    create_time, modify_time
+  </sql>
+</mapper>
